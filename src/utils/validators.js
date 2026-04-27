@@ -21,7 +21,7 @@ export function validate(formData) {
     errors.email = "Must be a valid BITS email"
   }
 
-  if (!/^(20[0-9]{2}A[0-9][A-Z][0-9]{4}P|20[0-9]{2}B[0-9]PS[0-9]{4}P|20[0-9]{2}B[0-9]A[0-9][0-9]{4}P)$/.test(formData.bitsId)) {
+  if (!/^(20[0-9]{2}A[0-9][A-Z]{2}[0-9]{4}P|20[0-9]{2}B[0-9]PS[0-9]{4}P|20[0-9]{2}B[0-9]A[0-9][0-9]{4}P)$/.test(formData.bitsId)) {
     errors.bitsId = "Must be a valid BITS ID"
   }
 
